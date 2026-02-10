@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kodelyne - Consultoría Tech Innovadora</title>
+    
+    <!-- SOLO CSS y FontAwesome -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Precarga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body data-theme="dark">
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-bolt"></i> <span>KODELYNE</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#inicio" class="nav-link">INICIO</a></li>
+            <li><a href="#servicios" class="nav-link">SERVICIOS</a></li>
+            <li><a href="#proyectos" class="nav-link">PROYECTOS</a></li>
+            <li><a href="#tecnologias" class="nav-link">TECNOLOGÍAS</a></li>
+            <li><a href="#contacto" class="nav-link">CONTACTO</a></li>
+        </ul>
+        <div class="navbar-actions">
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-sun"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO SECTION -->
+<section class="hero" id="inicio">
+    <div class="hero-background">
+        <div class="particles-container" id="particles"></div>
+        <div class="hero-gradient"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+    </div>
+    
+    <div class="container hero-container">
+        <div class="hero-content">
+            <div class="hero-badge fade-in">
+                <i class="fas fa-star"></i>
+                <span>AGENCIA TECH PREMIUM 2026</span>
+            </div>
+            
+            <h1 class="fade-in-delay">
+                INNOVACIÓN <span class="gradient-text">DIGITAL</span><br>
+                QUE <span class="gradient-text">TRANSFORMA</span> NEGOCIOS
+            </h1>
+            
+            <p class="fade-in-delay-2">
+                Desarrollamos soluciones tecnológicas de vanguardia con React, IA y automatización inteligente. 
+                Llevamos tu visión digital al siguiente nivel.
+            </p>
+            
+            <div class="hero-cta fade-in-delay-3">
+                <button class="btn-primary">
+                    <i class="fas fa-rocket"></i> COMENZAR PROYECTO
+                    <span class="btn-ripple"></span>
+                </button>
+                <button class="btn-secondary">
+                    <i class="fas fa-play-circle"></i> VER DEMO
+                </button>
+            </div>
+            
+            <div class="hero-stats fade-in-delay-4">
+                <div class="stat-item">
+                    <div class="stat-number" data-count="150">0+</div>
+                    <div class="stat-label">PROYECTOS EXITOSOS</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-count="98">0%</div>
+                    <div class="stat-label">SATISFACCIÓN CLIENTES</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">SOPORTE TÉCNICO</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="phone-mockup">
+                <div class="phone-frame">
+                    <div class="phone-notch"></div>
+                    <div class="phone-screen">
+                        <div class="screen-content">
+                            <div class="app-header">
+                                <div class="app-dot"></div>
+                                <div class="app-dot"></div>
+                                <div class="app-dot"></div>
+                            </div>
+                            <div class="app-card app-card-1"></div>
+                            <div class="app-card app-card-2"></div>
+                            <div class="app-card app-card-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="phone-button"></div>
+                <div class="phone-shadow"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- QUOTE SECTION -->
+<section class="quote-section">
+    <div class="container">
+        <div class="quote-content">
+            <div class="quote-icon">
+                <i class="fas fa-quote-left"></i>
+            </div>
+            <h2 class="quote-text">
+                "El software no es solo código, es la materialización de una visión estratégica"
+            </h2>
+            <p class="quote-author">— Equipo Kodelyne</p>
+        </div>
+    </div>
+</section>
+
+<!-- SERVICIOS -->
+<!-- Reemplaza la sección de servicios con esto: -->
+<section class="servicios" id="servicios">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-cogs"></i> TECNOLOGÍAS QUE DOMINAMOS
+            </div>
+            <h2 class="section-title">Stack Tecnológico Completo</h2>
+            <p class="section-description">
+                Utilizamos las herramientas más modernas y eficientes para desarrollar soluciones de alto impacto.
+            </p>
+        </div>
+        
+        <div class="tech-stack-grid">
+            <!-- Frontend -->
+            <div class="tech-category">
+                <h3 class="tech-category-title">
+                    <i class="fas fa-desktop"></i> Frontend
+                </h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-icon react">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>React.js</h4>
+                            <p>Librería JavaScript para interfaces</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 95%"></div>
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-icon next">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Next.js</h4>
+                            <p>Framework React con SSR</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-icon vue">
+                            <i class="fab fa-vuejs"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Vue.js</h4>
+                            <p>Framework progresivo JavaScript</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Backend -->
+            <div class="tech-category">
+                <h3 class="tech-category-title">
+                    <i class="fas fa-server"></i> Backend
+                </h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-icon node">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Node.js</h4>
+                            <p>JavaScript del lado del servidor</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 92%"></div>
+                                <span>92%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-icon python">
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Python</h4>
+                            <p>Django & Flask frameworks</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 88%"></div>
+                                <span>88%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-icon php">
+                            <i class="fab fa-php"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>PHP/Laravel</h4>
+                            <p>Desarrollo web empresarial</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 80%"></div>
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Bases de Datos -->
+            <div class="tech-category">
+                <h3 class="tech-category-title">
+                    <i class="fas fa-database"></i> Bases de Datos
+                </h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-icon mongo">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>MongoDB</h4>
+                            <p>Base de datos NoSQL</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 85%"></div>
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-icon mysql">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>MySQL</h4>
+                            <p>Base de datos relacional</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 90%"></div>
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-icon redis">
+                            <i class="fas fa-memory"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Redis</h4>
+                            <p>Almacenamiento en caché</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 75%"></div>
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile & Cloud -->
+            <div class="tech-category">
+                <h3 class="tech-category-title">
+                    <i class="fas fa-mobile-alt"></i> Mobile & Cloud
+                </h3>
+                <div class="tech-list">
+                    <div class="tech-item">
+                        <div class="tech-icon react-native">
+                            <i class="fas fa-mobile"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>React Native</h4>
+                            <p>Apps móviles multiplataforma</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 87%"></div>
+                                <span>87%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-icon aws">
+                            <i class="fab fa-aws"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>AWS</h4>
+                            <p>Servicios en la nube</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 82%"></div>
+                                <span>82%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tech-item">
+                        <div class="tech-icon docker">
+                            <i class="fab fa-docker"></i>
+                        </div>
+                        <div class="tech-info">
+                            <h4>Docker</h4>
+                            <p>Contenedorización</p>
+                            <div class="tech-level">
+                                <div class="level-bar" style="width: 78%"></div>
+                                <span>78%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TECNOLOGÍAS -->
+
+        
+        <div class="tech-grid" id="techGrid">
+            <!-- Tecnologías se cargarán dinámicamente -->
+        </div>
+    </div>
+</section>
+
+<!-- CLIENTES -->
+<!-- Reemplaza la sección de clientes con esto: -->
+<section class="clientes" id="clientes">
+    <div class="container">
+        <div class="section-header">
+            <div class="section-badge">
+                <i class="fas fa-globe-americas"></i> PRESENCIA GLOBAL
+            </div>
+            <h2 class="section-title">Marcas que Confían en Nosotros</h2>
+            <p class="section-description">
+                Empresas líderes en España, Argentina y Estados Unidos que han transformado su negocio con nuestras soluciones.
+            </p>
+        </div>
+        
+        <div class="marcas-container">
+            <!-- Pestañas por país -->
+            <div class="marcas-tabs">
+                <button class="tab-btn active" data-country="espana">
+                    <i class="fas fa-flag"></i> España
+                </button>
+                <button class="tab-btn" data-country="argentina">
+                    <i class="fas fa-flag"></i> Argentina
+                </button>
+                <button class="tab-btn" data-country="usa">
+                    <i class="fas fa-flag-usa"></i> Estados Unidos
+                </button>
+            </div>
+            
+            <!-- Contenido de pestañas -->
+            <div class="marcas-content">
+                <!-- España -->
+                <div class="marcas-grid active" id="espana">
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h3>BBVA</h3>
+                        <p>Banca Digital</p>
+                        <span class="marca-tag">Fintech</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-satellite-dish"></i>
+                        </div>
+                        <h3>Telefónica</h3>
+                        <p>Telecomunicaciones</p>
+                        <span class="marca-tag">5G & IoT</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3>Iberdrola</h3>
+                        <p>Energía</p>
+                        <span class="marca-tag">Smart Grid</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-train"></i>
+                        </div>
+                        <h3>Renfe</h3>
+                        <p>Transporte</p>
+                        <span class="marca-tag">Logística</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <h3>El Corte Inglés</h3>
+                        <p>Retail</p>
+                        <span class="marca-tag">E-commerce</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>PRISA</h3>
+                        <p>Medios</p>
+                        <span class="marca-tag">Digital Media</span>
+                    </div>
+                </div>
+                
+                <!-- Argentina -->
+                <div class="marcas-grid" id="argentina">
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Mercado Libre</h3>
+                        <p>E-commerce</p>
+                        <span class="marca-tag">Marketplace</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-newspaper"></i>
+                        </div>
+                        <h3>Grupo Clarín</h3>
+                        <p>Medios</p>
+                        <span class="marca-tag">Digital Media</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-oil-can"></i>
+                        </div>
+                        <h3>YPF</h3>
+                        <p>Energía</p>
+                        <span class="marca-tag">Oil & Gas</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h3>Andreani</h3>
+                        <p>Logística</p>
+                        <span class="marca-tag">Delivery</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-utensils"></i>
+                        </div>
+                        <h3>Arcor</h3>
+                        <p>Alimentos</p>
+                        <span class="marca-tag">FMCG</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-bank"></i>
+                        </div>
+                        <h3>Banco Galicia</h3>
+                        <p>Banca</p>
+                        <span class="marca-tag">Fintech</span>
+                    </div>
+                </div>
+                
+                <!-- Estados Unidos (menor renombre) -->
+                <div class="marcas-grid" id="usa">
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-cloud"></i>
+                        </div>
+                        <h3>DigitalOcean</h3>
+                        <p>Cloud Hosting</p>
+                        <span class="marca-tag">Infraestructura</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>HubSpot</h3>
+                        <p>Marketing</p>
+                        <span class="marca-tag">CRM</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>GitLab</h3>
+                        <p>DevOps</p>
+                        <span class="marca-tag">CI/CD</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>MongoDB Inc.</h3>
+                        <p>Base de Datos</p>
+                        <span class="marca-tag">NoSQL</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <h3>Figma</h3>
+                        <p>Diseño</p>
+                        <span class="marca-tag">UI/UX</span>
+                    </div>
+                    
+                    <div class="marca-card">
+                        <div class="marca-logo">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h3>Twilio</h3>
+                        <p>Comunicaciones</p>
+                        <span class="marca-tag">APIs</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+    <div class="container">
+        <div class="contacto-wrapper">
+            <div class="contacto-info">
+                <h2 class="section-title">Transformemos Tu Idea en Realidad</h2>
+                <p class="contacto-description">
+                    ¿Listo para llevar tu proyecto al siguiente nivel? Nuestro equipo de expertos está preparado para desarrollar la solución perfecta para tus necesidades.
+                </p>
+                
+                <div class="contacto-features">
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Consultoría inicial gratuita</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Desarrollo ágil y transparente</span>
+                    </div>
+                    <div class="feature-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Soporte post-lanzamiento</span>
+                    </div>
+                </div>
+                
+                <div class="contacto-direct">
+                    <h3><i class="fas fa-headset"></i> Contacto Directo</h3>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:contacto@kodelyne.com">contacto@kodelyne.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+59170000000">+591 700 00000</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>La Paz, Bolivia | Remoto Global</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="formulario-contacto">
+                <form id="formularioContacto">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre"><i class="fas fa-user"></i> Nombre Completo</label>
+                            <input type="text" id="nombre" class="input-field" placeholder="Ingresa tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Corporativo</label>
+                            <input type="email" id="email" class="input-field" placeholder="tu@empresa.com" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="telefono"><i class="fas fa-phone"></i> Teléfono</label>
+                            <input type="tel" id="telefono" class="input-field" placeholder="+591 XXX XXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="servicio"><i class="fas fa-cogs"></i> Servicio de Interés</label>
+                            <select id="servicio" class="input-field" required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="react">Desarrollo React/Next.js</option>
+                                <option value="mobile">Apps Móviles</option>
+                                <option value="ia">Inteligencia Artificial</option>
+                                <option value="automation">Automatización N8N</option>
+                                <option value="consulting">Consultoría Tech</option>
+                                <option value="other">Otro Proyecto</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="presupuesto"><i class="fas fa-dollar-sign"></i> Presupuesto Aproximado</label>
+                        <select id="presupuesto" class="input-field">
+                            <option value="">Selecciona un rango</option>
+                            <option value="1-5">$1,000 - $5,000</option>
+                            <option value="5-15">$5,000 - $15,000</option>
+                            <option value="15-30">$15,000 - $30,000</option>
+                            <option value="30+">$30,000+ (Proyecto empresarial)</option>
+                            <option value="undefined">Por definir</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensaje"><i class="fas fa-comment-alt"></i> Detalles del Proyecto</label>
+                        <textarea id="mensaje" class="input-field" placeholder="Describe tu proyecto, objetivos y requerimientos..." rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-submit">
+                        <i class="fas fa-paper-plane"></i> ENVIAR PROPUESTA
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+          <!-- Reemplaza la parte del footer brand con esto: -->
+<div class="footer-brand">
+    <a href="#inicio" class="logo footer-logo">
+        <i class="fas fa-bolt"></i> 
+        <span>KODELYNE</span>
+    </a>
+    <p class="footer-description">
+        Agencia especializada en desarrollo de software innovador, inteligencia artificial y soluciones tecnológicas de alto impacto para empresas globales.
+    </p>
+</div>
+            
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Desarrollo Web React</a></li>
+                    <li><a href="#">Apps Móviles</a></li>
+                    <li><a href="#">Inteligencia Artificial</a></li>
+                    <li><a href="#">Automatización</a></li>
+                    <li><a href="#">Consultoría Tech</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="#">Sobre Nosotros</a></li>
+                    <li><a href="#">Portafolio</a></li>
+                    <li><a href="#">Equipo</a></li>
+                    <li><a href="#">Blog Tech</a></li>
+                    <li><a href="#">Carreras</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Términos de Servicio</a></li>
+                    <li><a href="#">Política de Privacidad</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Aviso Legal</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-social">
+            <h3>Conecta con Nuestro Equipo</h3>
+            <p>Síguenos en redes para contenido exclusivo sobre tecnología</p>
+            <div class="social-links">
+                <a href="#" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="#" class="social-link">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 <strong>Kodelyne Tech Solutions</strong>. Todos los derechos reservados.</p>
+            <p>Desarrollado con <i class="fas fa-heart"></i> en Bolivia para el mundo</p>
+        </div>
+    </div>
+</footer>
+
+<!-- BOTONES FLOTANTES -->
+<button class="scroll-top" id="scrollTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<a href="https://wa.me/59170000000?text=Hola%20Kodelyne%2C%20vi%20su%20web%20y%20me%20interesa%20saber%20m%C3%A1s" 
+   class="whatsapp-btn" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- REACT ROOT -->
+<div id="react-root"></div>
+
+<!-- AL FINAL DEL BODY: -->
+    <script src="./js/script.js"></script>
+    <script src="./js/particles.js"></script>
+    
+    <!-- Script de inicialización -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('🚀 Kodelyne inicializado');
+            // Tu código de inicialización aquí
+        });
+    </script>
+</body>
+</html>>
