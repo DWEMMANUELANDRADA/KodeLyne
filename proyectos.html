@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyectos - Kodelyne</title>
+    <!-- CSS y FontAwesome -->
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Precarga de fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <style>
+        .proyectos-page {
+            padding: 8rem 0 4rem;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+        }
+
+        .proyectos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        /* Ajuste de título para proyectos independientes */
+        .proyectos-header {
+            text-align: center;
+            margin-bottom: 4rem;
+            color: white;
+            animation: fadeInUp 0.8s ease-out;
+        }
+    </style>
+</head>
+
+<body data-theme="dark">
+    <!-- NAVBAR (reducido para páginas secundarias) -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"
+                    style="text-decoration:none; color:inherit; display:flex; align-items:center; gap:0.625rem;">
+                    <i class="fas fa-bolt"></i> <span>KODELYNE</span>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#inicio" class="nav-link">INICIO</a></li>
+                <li><a href="index.html#servicios" class="nav-link">SERVICIOS</a></li>
+                <li><a href="proyectos.html" class="nav-link" style="color:#818cf8;">PROYECTOS</a></li>
+                <li><a href="index.html#tecnologias" class="nav-link">TECNOLOGÍAS</a></li>
+                <li><a href="index.html#contacto" class="nav-link">CONTACTO</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-sun"></i></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECCIÓN PROYECTOS -->
+    <section class="proyectos-page" id="proyectos">
+        <div class="container">
+            <div class="proyectos-header">
+                <div class="section-badge"
+                    style="background: rgba(99, 102, 241, 0.1); color: #6366f1; padding: 0.5rem 1.5rem; border-radius: 50px; font-size: 0.875rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; display: inline-block; border: 1px solid rgba(99, 102, 241, 0.3); margin-bottom: 1rem;">
+                    <i class="fas fa-briefcase"></i> NUESTRO TRABAJO
+                </div>
+                <h1 class="section-title"
+                    style="font-size: clamp(2.5rem, 4vw, 3.5rem); font-weight: 900; background: linear-gradient(135deg, #6366f1, #ec4899); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 1rem;">
+                    Casos de Éxito</h1>
+                <p class="section-description"
+                    style="color: #cbd5e1; font-size: 1.2rem; max-width: 700px; margin: 0 auto;">
+                    Explora nuestra colección de proyectos destacados, donde hemos utilizado tecnología de punta para
+                    resolver desafíos empresariales complejos con innovación y diseño de alta calidad.
+                </p>
+            </div>
+
+            <div class="proyectos-grid">
+                <!-- Proyecto 1 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-header">
+                        <i class="fas fa-shopping-bag proyecto-icon"></i>
+                        <span class="proyecto-categoria">E-commerce</span>
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-title"><i class="fas fa-rocket"></i> NexaShop</h3>
+                        <p class="proyecto-desc">Plataforma B2B con gestión de inventario en tiempo real. Se integró una
+                            inteligencia artificial para predecir demandas y automatizar la cadena de suministros,
+                            aumentando ventas en un 40%.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 2 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-header" style="background: linear-gradient(135deg, #10b981, #047857);">
+                        <i class="fas fa-heartbeat proyecto-icon"></i>
+                        <span class="proyecto-categoria">HealthTech</span>
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-title"><i class="fas fa-laptop-medical"></i> MediSync AI</h3>
+                        <p class="proyecto-desc">App para seguimiento de pacientes crónicos usando React Native.
+                            Sincroniza wearables, analiza signos vitales vía AWS y previene anomalías recomendando citas
+                            al instante.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">React Native</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">AWS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-header" style="background: linear-gradient(135deg, #f59e0b, #d97706);">
+                        <i class="fas fa-chart-line proyecto-icon"></i>
+                        <span class="proyecto-categoria">Fintech</span>
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-title"><i class="fas fa-coins"></i> WalletFlow</h3>
+                        <p class="proyecto-desc">Billetera virtual con soporte multi-divisa y analíticas financieras
+                            para pymes. Se redujo la latencia de pagos un 60% al migrar a una arquitectura Serverless
+                            escalable.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 4 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-header" style="background: linear-gradient(135deg, #8b5cf6, #6d28d9);">
+                        <i class="fas fa-robot proyecto-icon"></i>
+                        <span class="proyecto-categoria">Automatización</span>
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-title"><i class="fas fa-cogs"></i> AutoBot CRM</h3>
+                        <p class="proyecto-desc">Sistema de automatización N8N conectado a WhatsApp y Gmail. Califica
+                            leads automáticamente, agendando reuniones y reduciendo carga operativa en soporte por un
+                            85%.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">n8n</span>
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">Redis</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 5 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-header" style="background: linear-gradient(135deg, #0ea5e9, #0369a1);">
+                        <i class="fas fa-graduation-cap proyecto-icon"></i>
+                        <span class="proyecto-categoria">EdTech</span>
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-title"><i class="fas fa-book-open"></i> LearnSphere</h3>
+                        <p class="proyecto-desc">Aula virtual inmersiva para academia de idiomas, con clases en vivo,
+                            gamificación y análisis de pronunciación usando modelos de ML propios desplegados en
+                            contenedores Docker.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Docker</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 6 -->
+                <div class="proyecto-card">
+                    <div class="proyecto-header" style="background: linear-gradient(135deg, #ef4444, #b91c1c);">
+                        <i class="fas fa-utensils proyecto-icon"></i>
+                        <span class="proyecto-categoria">FoodTech</span>
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-title"><i class="fas fa-pizza-slice"></i> DeliveryHub</h3>
+                        <p class="proyecto-desc">Dashboard administrativo y portal de pedidos con mapas interactivos
+                            para cadena de restaurantes. Integración con pasarelas de pago y tracking en vivo de
+                            deliveryistas.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">Next.js</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyecto 7 (NUEVO) -->
+                <div class="proyecto-card">
+                    <div class="proyecto-header" style="background: linear-gradient(135deg, #f43f5e, #be123c);">
+                        <i class="fas fa-boxes proyecto-icon"></i>
+                        <span class="proyecto-categoria">ERP System</span>
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-title"><i class="fas fa-cubes"></i> OmniStock ERP</h3>
+                        <p class="proyecto-desc">Sistema integral para la gestión de inventario y facturación
+                            multi-sucursal. Desarrollo de endpoints robustos y migraciones complejas de base de datos
+                            relacional para soportar alto volumen de transacciones locales.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">SQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Proyecto 8 (NUEVO) -->
+                <div class="proyecto-card">
+                    <div class="proyecto-header" style="background: linear-gradient(135deg, #1d4ed8, #1e3a8a);">
+                        <i class="fas fa-building proyecto-icon"></i>
+                        <span class="proyecto-categoria">Real Estate</span>
+                    </div>
+                    <div class="proyecto-content">
+                        <h3 class="proyecto-title"><i class="fas fa-home"></i> PropMarket</h3>
+                        <p class="proyecto-desc">Portal inmobiliario escalable con motor de búsqueda avanzado.
+                            Implementación de un backend en Laravel con Eloquent ORM optimizado para consultas
+                            geográficas y relaciones SQL complejas entre propiedades y agentes.</p>
+                        <div class="proyecto-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">Laravel</span>
+                            <span class="tech-tag">PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER SIMPLE -->
+    <footer class="footer" style="padding-top:2rem; border-top:1px solid #334155; text-align:center;">
+        <div class="container">
+            <p style="color:#cbd5e1;">© 2026 <strong>Kodelyne Tech Solutions</strong>. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+    <!-- SCROLL TOP -->
+    <button class="scroll-top" id="scrollTop"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- SCRIPTS MÍNIMOS -->
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
